@@ -1,0 +1,2 @@
+/etc/init.d/postgresql start
+su - postgres -c "createuser --no-superuser --createdb --no-createrole root"

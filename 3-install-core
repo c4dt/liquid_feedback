@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+/etc/init.d/postgresql start
+cd core
+make
+mkdir /opt/liquid_feedback_core
+cp core.sql lf_update lf_update_issue_order lf_update_suggestion_order /opt/liquid_feedback_core
+cd /opt/liquid_feedback_core
+createdb liquid_feedback
+psql -v ON_ERROR_STOP=1 -f core.sql liquid_feedback
+
