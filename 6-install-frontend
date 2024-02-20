@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+mv frontend /opt/liquid_feedback_frontend
+chown www-data /opt/liquid_feedback_frontend/tmp
+

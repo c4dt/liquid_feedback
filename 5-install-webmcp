@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+cd webmcp
+make
+mkdir /opt/webmcp
+cp -RL framework/* /opt/webmcp/
+

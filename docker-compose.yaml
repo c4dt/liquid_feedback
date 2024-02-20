@@ -1,0 +1,8 @@
+services:
+  liquid_feedback:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./myconfig.lua:/opt/liquid_feedback_frontend/config/myconfig.lua
+

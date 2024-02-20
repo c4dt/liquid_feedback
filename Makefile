@@ -1,5 +1,5 @@
 docker: download
-	docker buildx build .
+	docker buildx build -t liquid_feedback .
 
 core:
 	curl https://www.public-software-group.org/pub/projects/liquid_feedback/backend/v4.2.2/liquid_feedback_core-v4.2.2.tar.gz | tar x

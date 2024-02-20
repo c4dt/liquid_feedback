@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+cd moonbridge
+pmake MOONBR_LUA_PATH=/opt/moonbridge/?.lua
+mkdir /opt/moonbridge
+cp moonbridge /opt/moonbridge/
+cp moonbridge_http.lua /opt/moonbridge/
+
