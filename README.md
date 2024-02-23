@@ -1,6 +1,8 @@
 # Liquid_Feedback
 
-Creating a docker out of file:///Users/ligasser/Programming/C4DT/liquid_feedback/INSTALL.html
+Creating a docker out of https://liquidfeedback.com/en/
+They have a nice video on their site which summarizes the functionalities of the
+software.
 
 ## Build
 
